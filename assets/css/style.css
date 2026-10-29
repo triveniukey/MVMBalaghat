@@ -175,7 +175,7 @@ p:empty {
 p {
     font-family: var(--body-font);
     margin: 0 0 18px 0;
-    color: var(--body-color);
+    color: rgb(164, 161, 161);
     line-height: 1.75
 }
 
@@ -6369,7 +6369,8 @@ ol.wp-block-rss {
     padding-right: 0;
     background-color: transparent;
     border-bottom: none;
-    position: relative
+    position: relative;
+    color: white;
 }
 
 .footer-widget.widget_meta a:before,
@@ -6484,7 +6485,8 @@ ol.wp-block-rss {
 .th-widget-about .about-text {
     max-width: 313px;
     margin-bottom: 30px;
-    margin-top: -0.5em
+    margin-top: -0.5em;
+    color: white;
 }
 
 .th-widget-about .footer-info {
@@ -6498,7 +6500,7 @@ ol.wp-block-rss {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    color: var(--body-color);
+    color: white;
     line-height: 26px;
     padding: 0 0 0 40px;
     max-width: 360px
@@ -8078,8 +8080,8 @@ ol.wp-block-rss {
 }
 
 .header-layout5 .header-logo {
-    padding-top: 25px;
-    padding-bottom: 25px
+    padding-top: 15px;
+    padding-bottom: 15px
 }
 
 .header-layout5 .sticky-wrapper {
@@ -8197,7 +8199,7 @@ ol.wp-block-rss {
     --border-color: rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 2;
-    background-color: #10131C;
+    background-color: #06288f;
     overflow: hidden
 }
 
@@ -8267,7 +8269,7 @@ ol.wp-block-rss {
 .copyright-wrap {
     padding: 22px 0;
     background-size: 100% auto;
-    background-color: #1A1D26
+    background-color: #042075b3
 }
 
 .copyright-text {
