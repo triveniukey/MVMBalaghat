@@ -4,7 +4,7 @@
     --theme-color: #0181F5;
     --theme-color2: #127782;
     --theme-color3: #32B4B4;
-    --title-color: #010F34;
+    --title-color: #103390;
     --body-color: #788094;
     --smoke-color: #F5F7FA;
     --smoke-color2: #ECF1F5;
@@ -175,7 +175,7 @@ p:empty {
 p {
     font-family: var(--body-font);
     margin: 0 0 18px 0;
-    color: rgb(164, 161, 161);
+    color: rgb(35 122 197);
     line-height: 1.75
 }
 
@@ -1765,8 +1765,8 @@ textarea.is-invalid {
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
-    padding: 22px 30px;
-    min-width: 144px;
+    padding: 22px 0px;
+    min-width: 115px;
     border-radius: 10px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out
@@ -7673,7 +7673,7 @@ ol.wp-block-rss {
     content: "";
     position: absolute;
     right: -14px;
-    width: 89%;
+    width: 82%;
     height: 90px;
     background-color: var(--white-color);
     border-radius: 100px;
@@ -7699,7 +7699,7 @@ ol.wp-block-rss {
 }
 
 .header-layout2 .main-menu {
-    padding-left: 60px
+    padding-left: 0px
 }
 
 @media (max-width: 1199px) {
@@ -7766,7 +7766,7 @@ ol.wp-block-rss {
     left: 0;
     width: 23.6%;
     height: 120px;
-    border-radius: 0px 100px 100px 150px;
+    border-radius: 0px 140px 100px 150px;
     background: var(--theme-color);
     z-index: -1
 }
@@ -7779,7 +7779,7 @@ ol.wp-block-rss {
 
 @media (max-width: 1699px) {
     .header-layout2 .logo-shape {
-        width: 21%
+        width: 24%
     }
 }
 
@@ -10693,7 +10693,7 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     position: relative;
     width: 100%;
     height: auto;
-    aspect-ratio: 1920 / 750;
+    aspect-ratio: 1920 / 800;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -15195,6 +15195,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .about-desc {
+    text-align: justify;
     margin-bottom: 35px;
     padding-bottom: 35px;
     border-bottom: 1px solid var(--th-border-color)
