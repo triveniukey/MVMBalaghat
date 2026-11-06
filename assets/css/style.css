@@ -7313,9 +7313,6 @@ ol.wp-block-rss {
     background-color: var(--smoke-color2)
 }
 
-.header-top a:hover {
-    color: var(--theme-color)
-}
 .header-layout2 {
     --body-color: #fff
 }
@@ -7394,10 +7391,15 @@ ol.wp-block-rss {
 @media (max-width: 575px) {
     .header-layout2 .sticky-wrapper .header-logo {
         margin-top: 0px;
-        width: 280px;
+        width: 270px;
     }
 }
-
+@media (max-width: 390px) {
+    .header-layout2 .sticky-wrapper .header-logo {
+        margin-top: 0px;
+        width: 230px;
+    }
+}
 @media (max-width: 1499px) {
     .header-layout2 .header-button .th-btn {
         display: block
@@ -7451,7 +7453,7 @@ ol.wp-block-rss {
 
 @media (max-width: 991px) {
     .header-layout2 .menu-area:before {
-        width: 70%
+        width: 20%
     }
 }
 
@@ -7536,7 +7538,7 @@ ol.wp-block-rss {
 
 @media (min-width: 2399px) {
     .header-layout2 .logo-shape {
-        width: 28%
+        width: 35%
     }
 }
 
@@ -7548,28 +7550,33 @@ ol.wp-block-rss {
 
 @media (max-width: 1299px) {
     .header-layout2 .logo-shape {
-        width: 23%
+        width: 35%
     }
 }
 
 @media (max-width: 1199px) {
     .header-layout2 .logo-shape {
-        width: 30%
+        width: 40%
     }
 }
 
 @media (max-width: 991px) {
     .header-layout2 .logo-shape {
-        width: 42%
+        width: 53%
+    }
+}
+@media (max-width: 771px) {
+    .header-layout2 .logo-shape {
+        width: 65%
     }
 }
 
 @media (max-width: 575px) {
     .header-layout2 .logo-shape {
         width: 100%;
-        height: 80px;
+        /* height: 80px;
         top: 50px;
-        border-radius: 0
+        border-radius: 0 */
     }
 }
 
@@ -7578,6 +7585,51 @@ ol.wp-block-rss {
         --main-container: 1540px
     }
 }
+
+
+
+
+
+
+/* 1300px tak menu off + toggle on */
+@media (max-width: 1299px) {
+    .header-layout2 .main-menu {
+        display: none !important;
+    }
+    
+    .header-layout2 .th-menu-toggle {
+        display: inline-flex !important;   /* ya block, jo theme mein use ho */
+        align-items: center;
+        justify-content: center;
+    }
+        .header-layout2 .menu-area:before {
+        width: 0%
+    }
+}
+@media (max-width: 1399px) {
+   .header-logo img{
+    width: 320px;
+   }
+   .main-menu>ul>li {
+            margin: 0 5px;
+         
+   }
+   .header-layout2 .main-menu>ul>li>a
+ {
+    font-weight: 600;
+  
+    font-size: 14px;
+
+}
+}
+@media (min-width: 1700px) and (max-width: 2500px) {
+    .header-logo img {
+        margin-left: -50px;
+    }
+}
+
+
+
 
 .footer-wrapper {
     --border-color: rgba(255, 255, 255, 0.3);
@@ -36938,6 +36990,8 @@ span.select2-selection.select2-selection--single:focus {
     border: 1px solid #4898d5;
     border-radius: 2px;
     margin: 0 2px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
@@ -37720,17 +37774,33 @@ span.select2-selection.select2-selection--single:focus {
       }
     }
 
+    /* DataTables Show Entries and Search Alignment */
+#committeeTable_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+/* Show Entries */
+#committeeTable_wrapper .dataTables_length {
+    margin: 0 !important;
+    padding: 10px 12px !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+/* Search */
+#committeeTable_wrapper .dataTables_filter {
+    margin: 0 !important;
+    padding: 10px 12px !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-
-
-@media (min-width: 1400px) {
-
-    .header-layout2 .header-logo img {
-        width: 350px;
-        
-    }
-
-
+/* Table */
+#committeeTable_wrapper table {
+    width: 100% !important;
 }
