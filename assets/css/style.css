@@ -1,5 +1,127 @@
 @use "sass:math";
 
+/* ==============================
+   DM SANS FONT FAMILY
+============================== */
+
+/* ==============================
+   DM SANS FONT FAMILY
+============================== */
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM-Sans/static/DMSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM-Sans/static/DMSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM-Sans/static/DMSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM-Sans/static/DMSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM-Sans/static/DMSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM-Sans/static/DMSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM-Sans/static/DMSans-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ==============================
+   OUTFIT FONT FAMILY
+============================== */
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/static/Outfit-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/static/Outfit-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/static/Outfit-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/static/Outfit-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/static/Outfit-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/static/Outfit-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ==============================
+   ROOT VARIABLES
+============================== */
+
 :root {
     --theme-color: #0181F5;
     --theme-color2: #127782;
@@ -18,35 +140,81 @@
     --success-color: #28a745;
     --error-color: #dc3545;
     --th-border-color: #D8DDE1;
+
     --title-font: 'Outfit', sans-serif;
     --body-font: 'DM Sans', sans-serif;
+
     --style-font: 'Red Hat Display', cursive;
     --icon-font: "Font Awesome 6 Pro";
+
     --main-container: 1220px;
     --container-gutters: 30px;
     --section-space: 60px;
     --section-space-mobile: 80px;
     --section-title-space: 60px;
-    --ripple-ani-duration: 5s
+    --ripple-ani-duration: 5s;
 }
 
-.theme2 {
-    --theme-color: #32B4B4
+
+/* ==============================
+   GLOBAL SETTINGS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-    scroll-behavior: auto !important
+    scroll-behavior: auto !important;
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--body-font) !important;
     font-size: 16px;
     font-weight: 400;
     color: var(--body-color);
     line-height: 26px;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ALL HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font) !important;
+}
+
+
+/* PARAGRAPHS */
+
+p {
+    font-family: var(--body-font) !important;
+    font-weight: 400;
+}
+
+
+/* BUTTONS */
+
+button,
+.btn {
+    font-family: var(--body-font) !important;
+    font-weight: 600;
+}
+
+
+/* THEME 2 */
+
+.theme2 {
+    --theme-color: #32B4B4;
 }
 
 .bg-smoke {
@@ -221,7 +389,7 @@ h1 {
 
 .h2,
 h2 {
-    font-size: 41px;
+    font-size: 39px;
     line-height: 1.227
 }
 
@@ -7034,8 +7202,10 @@ ol.wp-block-rss {
 
 .main-menu ul.sub-menu a,
 .main-menu ul.mega-menu a {
+    font-family: 'DM Sans', sans-serif !important;
     font-size: 16px;
-    line-height: 30px
+    line-height: 30px;
+    font-weight: 600 !important;
 }
 
 .main-menu ul.sub-menu {
@@ -7635,7 +7805,7 @@ ol.wp-block-rss {
     --border-color: rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 2;
-    background-color: #1571d9;
+    background-color: #0863ca;
     overflow: hidden
 }
 
@@ -8231,6 +8401,18 @@ ol.wp-block-rss {
     overflow: hidden
 }
 
+.breadcumb-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 91, 174, 0.51);
+    z-index: 1;
+}
+
+.breadcumb-wrapper .container {
+    position: relative;
+    z-index: 2;
+}
 @media (max-width: 1199px) {
     .breadcumb-wrapper {
         padding: 260px 0 120px 0
@@ -13839,7 +14021,7 @@ span.select2-selection.select2-selection--single:focus {
 .contact-info-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 31px
+    gap: 0 11px
 }
 
 @media (max-width: 767px) {
@@ -16709,24 +16891,6 @@ span.select2-selection.select2-selection--single:focus {
     align-items: center;
     gap: 25px;
     margin-bottom: 0px
-}
-
-.testi-card_img {
-    position: relative;
-    min-width: 465px;
-    height: 507px;
-    z-index: 2;
-    -webkit-mask-image: url("../img/shape/test_shape_2.png");
-    mask-image: url("../img/shape/test_shape_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    margin-bottom: 50px
 }
 
 @media (max-width: 991px) {
@@ -37057,7 +37221,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .custom-gallery-overlay h4 {
     color: #fff;
-    font-size: 18px;
+    font-size: 13px;
     margin-bottom: 22px;
 }
 
