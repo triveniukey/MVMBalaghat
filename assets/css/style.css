@@ -14462,7 +14462,14 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 375px) {
     .img-box1 .img2 {
-        display: none
+        display: block !important;
+        position: absolute;
+        right: 5%;
+        bottom: 0%;
+    }
+
+    .img-box1 .img2 img {
+        display: block;
     }
 }
 
@@ -14487,8 +14494,8 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 375px) {
     .img-box1 .th-experience {
-        top: auto;
-        bottom: 0
+        top: 40%;
+        bottom: 30%;
     }
 }
 
@@ -14625,7 +14632,20 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 575px) {
     .img-box3 .img4 {
-        display: none
+        top: 80%;
+        bottom: 0%;
+    }
+
+    .img-box3 {
+        margin-bottom: 350px !important;
+    }
+      .img-box3 .th-experience.style2 {
+        position: absolute !important;
+        top: 65% !important;
+        bottom: auto !important;
+        right: 0 !important;
+        z-index: 5;
+        margin: 0;
     }
 }
 
@@ -24004,6 +24024,13 @@ span.select2-selection.select2-selection--single:focus {
 .project-item.style2 .project-content .icon-btn:hover {
     background: var(--white-color);
     color: var(--title-color)
+}
+
+.project-img a {
+    display: block;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .project-details-nav {
