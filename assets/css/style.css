@@ -38016,3 +38016,54 @@ span.select2-selection.select2-selection--single:focus {
     background-position: center top !important;
     background-size: cover !important;
 }
+
+/* DataTable Controls Alignment */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+    width: 25%;
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.dataTables_wrapper .dataTables_length {
+    float: left;
+    text-align: left;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+}
+
+/* Show Entries Dropdown */
+.dataTables_wrapper .dataTables_length select {
+    width: 70px !important;
+    height: 35px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/* Search Input */
+.dataTables_wrapper .dataTables_filter input {
+    width: 180px !important;
+    height: 35px;
+    padding: 5px 10px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table Bottom */
+.dataTables_wrapper .dataTables_info {
+    float: left;
+    padding-top: 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    padding-top: 5px;
+}
+.dataTables_wrapper label{
+    display: flex;
+}
