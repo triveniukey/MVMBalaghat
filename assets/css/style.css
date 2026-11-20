@@ -7567,7 +7567,13 @@ ol.wp-block-rss {
 @media (max-width: 390px) {
     .header-layout2 .sticky-wrapper .header-logo {
         margin-top: 0px;
-        width: 230px;
+        width: 220px;
+    }
+}
+@media (max-width: 340px) {
+    .header-layout2 .sticky-wrapper .header-logo {
+        margin-top: 0px;
+        width: 170px;
     }
 }
 @media (max-width: 1499px) {
