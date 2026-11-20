@@ -611,11 +611,11 @@ h6 {
     margin-top: var(--bs-gutter-y)
 }
 
-@media (min-width: 1300px) {
+/* @media (min-width: 1300px) {
     .row {
         --bs-gutter-x: 30px
     }
-}
+} */
 
 .gy-30 {
     --bs-gutter-y: 30px
@@ -10348,9 +10348,15 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
 @media (max-width: 575px) {
     .mvm-hero-slider .th-hero-bg {
         aspect-ratio: 4 / 3;
+        margin-top: 30px;
     }
 }
-
+@media (max-width: 310px) {
+    .mvm-hero-slider .th-hero-bg {
+     
+        margin-top: 40px;
+    }
+}
 .hero-style2 .hero-subtitle span {
     display: inline-block;
     position: relative
@@ -38000,4 +38006,13 @@ span.select2-selection.select2-selection--single:focus {
 /* Table */
 #committeeTable_wrapper table {
     width: 100% !important;
+}
+.mvm-hero-slider {
+    margin-top: -50px;
+    overflow: visible;
+}
+
+.mvm-hero-slider .th-hero-bg {
+    background-position: center top !important;
+    background-size: cover !important;
 }
